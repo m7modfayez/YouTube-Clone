@@ -1,0 +1,265 @@
+#root {
+  /* max-width: device-width;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  font-family: Sans-serif;
+  /* background-color: #fafafa; */
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+ /* --------my-style-----  */
+
+.head {
+  background-color: rgb(255, 255, 255);
+  /* width: 100%; */
+  height: 50px;
+  /* margin-top: -7px; */
+  padding: 2px;
+  display: flex;
+  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.left {
+  /* width: 46%; */
+  display: flex;
+  align-items: center;
+  cursor: pointer ;
+  padding-left: 15px;
+}
+.left img{
+  width: 42%;
+  padding-left: 27px;
+}
+
+.mid {
+  display: flex;
+  margin-left: 17%;
+  align-items: center;
+  
+}
+
+.mid input {
+  width: 520px;
+  border-radius: 50px 0px 0px 50px;
+  height: 67%;
+  padding-left: 15px;
+  border-color: rgb(205, 209, 209);
+  border:rgb(205, 209, 209) solid 1px;
+  font-size: 17px;
+
+}
+/* .mid input:focus {
+  border-color: rgb(37, 172, 172);
+  border: rgb(21, 134, 199) solid 0.5px;
+} */
+
+.mid button {
+  border-radius: 0 50px  50px 0;
+  width: 65px;
+  height: 77%;
+  margin-left: -5px;
+  cursor: pointer;
+  border:rgb(205, 209, 209) solid 1px;
+}
+
+.mid button:hover {
+  background-color: rgb(224, 230, 230);
+}
+
+.mid .mic {
+  margin-left: 15px;
+  background-color: #eeecec;
+  padding: 7px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.mid .mic:hover {
+  background-color: #dbd8d8;
+}
+
+.right {
+  margin-left: 23%;
+  align-items: center;
+  display: flex;
+  padding-top: 4px;
+}
+
+.right .icons {
+  /* margin-left: 15px; */
+  /* background-color: #eeecec; */
+  /* padding: 7px; */
+  /* width: 50px; */
+  /* height: 50px; */
+  border-radius: 100%;
+  /* cursor: pointer; */
+}
+.right .icons:hover{
+  background-color: #dbd8d8;
+}
+
+.right a {
+  padding-left: 24px;
+  color: rgb(41, 39, 39);
+}
+
+.left-navigation {
+  position: fixed;
+  align-items: center;
+  top: 54px;
+  left: 0;
+  width: 12%;
+  background-color: rgb(255, 255, 255);
+}
+.left-navigation:hover {
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.left-navigation hr {
+  margin: 14px auto;
+  width:190px;
+  border-top: 0.7px solid rgb(187, 181, 181);
+}
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  margin:3px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  cursor: pointer;
+  
+}
+.nav-item:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-item i {
+  color: black;
+}
+
+.nav-item a{
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.nav-item span {
+  margin-left: 20px;
+  font-family: Sans-serif;
+  font-size: 15px;
+}
+
+.videos {
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 13%;
+  margin-top: 80px;
+  width:86%;
+}
+
+.video {
+  margin: 8px;
+  width: 19%;
+
+  margin-top: 18px;
+  /* background-color: aliceblue; */
+  /* margin: 14px;
+  width: 22.5%; */
+}
+
+.video a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.video img {
+  width: 100%;
+  border-radius: 12px;
+}
+.video img:hover {
+  border-radius: 0;
+  width: 101%
+}
+
+.video .prop {
+  display: flex;
+  
+}
+.video .prop img {
+  margin-top:7px;
+  margin-left: 2px;
+  width:40px;
+  height: 40px;
+  border-radius: 100%;
+  /* padding:10px; */
+}
+.video .info {
+  margin-left: 20px;
+  margin-top: -4px;
+}
+.video .info a:hover {
+  color: black;
+}
+
+.ch-name {
+  font-size: 14px;
+  margin-top: -10px;
+  color: #686666;
+}
+.ch-name a {
+  color: #686666;
+}
+.ch-name a:hover {
+  color: black;
+}
+
