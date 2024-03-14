@@ -1,8 +1,8 @@
-export default function NavItem({icon, iconName}) {
+export default function NavItem({icon, iconName, url}) {
     return(
         <div className="nav-item">
-            <a href="#">
-            {icon}
+            <a target="_blank" href={url}>
+            {icon} 
             <span>{iconName}</span>
             </a>
         </div>

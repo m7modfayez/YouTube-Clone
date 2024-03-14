@@ -1,9 +1,11 @@
-export default function Header() {
+export default function Header({onClick}) {
     return(
     
     <header className="head">
         <div className="left">
-          <i class="material-icons">menu</i>
+          <button onClick={onClick} >
+           <i style={{width:"100%", height: "100%"}} class="material-icons">menu</i>
+          </button>
           <img className="icon" src="https://res.cloudinary.com/dbltmxwep/image/upload/v1709744669/youtube%20clone/hvo54qm2cvzqcna4siyz.png" alt=""></img>
         </div>
         <div className="mid">

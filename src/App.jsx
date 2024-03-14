@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react'  
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './assets/component/Navigation/Header'
@@ -7,21 +7,22 @@ import Videos from './assets/component/content/Videos'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isNavOpen, setIsNavOpen] = useState(true);
 
-  return (
+  // Function to toggle navigation style
+  const navStyle = () => {
+    setIsNavOpen(!isNavOpen);
+    console.log("hey");
+  };
+
+  return(
     <>
-      
-      <Header />
-      <LeftNav />
-      <Videos />
-     
-        
-
-
-      
+     <Header onClick={navStyle} />
+     <LeftNav isNavOpen={isNavOpen} />
+     <Videos isNavOpen={isNavOpen} />
     </>
-  )
+
+  );
 }
 
 export default App

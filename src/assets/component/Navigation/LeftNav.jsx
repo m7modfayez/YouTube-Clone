@@ -1,26 +1,92 @@
 import NavItem from "./NavItem";
-export default function LeftNav() {
+import { useState } from 'react'
+export default function LeftNav({isNavOpen}) {
+
+
+    const [listExpand, setListExpand] = useState(false);
+
+    const listexpandOnClk = () => {
+        setListExpand(!listExpand);
+    }
+
+    const [subscripExpand, setSubscripExpand] = useState(false);
+
+    const subscripExpandOnClk = () => {
+        setSubscripExpand(!subscripExpand);
+    }
+
     return(
-        <div className="left-navigation">
+        <div style={{ display: isNavOpen? "" : "none" }} className="left-navigation">
             {/* <nav> */}
-            
+            <div>
             <NavItem iconName={"Home"} icon={<i class="material-icons">home</i>}/>
             <NavItem iconName={"Shorts"} icon={<i class="material-icons">play_circle_outline</i>} />
             <NavItem iconName={"Explore"} icon={<i class="material-icons-outlined">explore</i>} />
             <NavItem iconName={"Subscriptions"} icon={<i class="material-icons-outlined">subscriptions</i>} />
             <hr className="hr"/>
-            <span style={{display: "flex" , marginLeft:"25px", cursor:"pointer"}} ><span style={{marginTop: "4px"}} >You</span>  <i style={{margin: "0px 0px 12px 5px",}} class="material-icons-outlined">chevron_right</i></span>
+            </div>
+            
+            <NavItem url={"https://www.youtube.com/feed/you"} iconName={""} icon={<i style={{display: "flex", marginRight: "20px"}} class="material-icons-outlined"> <span style={{margin: "4px", fontSize: "16px"}}> <b>You</b> </span> chevron_right</i>} />
 
-            {/* <NavItem iconName={"Your Videos"} icon={<i class="material-icons-outlined">ondemand_video</i>} /> */}
-          
+          <div style={{height: listExpand? "auto" : "180px", overflowY: "hidden"}}>
             <NavItem iconName={"Your channel"} icon={<i class="material-icons">person</i>} />
             <NavItem iconName={"history"} icon={<i class="material-icons">history</i>} />
-            {/* <NavItem iconName={"Your videos"} icon={<i class="material-icons">smart_display</i>} /> */}
             <NavItem iconName={"Your videos"} icon={<i class="material-icons">play_circle_outline</i>} />
             <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Show more"} icon={<i style={{color:"#4e4e4e" }} class="material-icons">expand_more</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+
+
+            </div >
+            <button onClick={listexpandOnClk} style={{backgroundColor: "white", border: "none", padding: "0", marginBottom: "" , width: "100%"}}>
+            <NavItem iconName={ listExpand? "Show less" : "Show more"} icon={<i style={{color:"#4e4e4e" }} class="material-icons">{listExpand? "expand_less" : "expand_more" } </i>} />
+            </button>
             <hr/>
-            
+
+            {/* <NavItem iconName={<b style={{marginLeft: "-13px"}}>Subscriptions</b>}  /> */}
+            <p style={{margin: "0 0  3px 21px", fontSize: "16px"}}><b>Subscriptions</b></p>
+           <div style={{height: subscripExpand ? "auto" : "180px", overflowY: "hidden"}}>
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
+
+           </div>
+
+           <button onClick={subscripExpandOnClk} style={{backgroundColor: "white", border: "none", padding: "0", marginBottom: "" , width: "100%"}}>
+            <NavItem iconName={ subscripExpand? "Show less" : "Show more"} icon={<i style={{color:"#4e4e4e" }} class="material-icons">{subscripExpand? "expand_less" : "expand_more" } </i>} />
+            </button>
+            <hr/>
+
 
         </div>
 

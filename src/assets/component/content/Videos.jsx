@@ -1,8 +1,8 @@
 import Video from "./Video";
 
-export default function Videos() {
+export default function Videos({isNavOpen}) {
     return(
-        <div className="videos">
+        <div style={{marginLeft: isNavOpen? "13%" : "auto", }} className="videos">
             <Video videoLink={"https://www.youtube.com/watch?v=9xt4XUgOzZ0&t=10s"} vImg={"https://i.ytimg.com/vi/9xt4XUgOzZ0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCX52Dwb5QytsTItyUF98y4cpAuWw"} chImg={"https://yt3.ggpht.com/ytc/AIdro_mzRkCBzI8rYCeDAexVtJIwny1eoin_bVT3ILQ-Yg=s68-c-k-c0x00ffffff-no-rj"} churl={"https://www.youtube.com/@-alaahamed5232"} vidTitle={"بدء الوحي وحقيقة محاولة الانتحار _لما درس السيرة يخاطب قلبك وعقلك💪_ السيرة النبوية ( 9 ) _ علاء حامد"} chName={"علاء حامد - Alaa Hamed"} views={"185K views . 1 month ago"} />
             <Video videoLink={"https://www.youtube.com/watch?v=nFH8xI_AUck"} vImg={"https://i.ytimg.com/vi/nFH8xI_AUck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBEOGrwEqHQURLv6ot3nCm09n8qQA"} chImg={"https://yt3.ggpht.com/mfQyx_OyCIn8MxRrt2tcX25QM0v4h9VxGUqZsUb9J8RSIcQLXIxmcqzUOPLWPK2Ytb6qlKHlJw=s68-c-k-c0x00ffffff-no-rj"} vidTitle={"علاج كثرة النوم والفتور عن العبادة  || #الشيخ_سمير_مصطفى "} chName={"قناة الشيخ سمير مصطفى الرسمية"} churl={"https://www.youtube.com/@samirmoustafa"} views={"102K views . 3 weeks ago"} />
             <Video videoLink={"https://www.youtube.com/watch?v=Epa9CFnSqso&ab_channel=NewMediaAcademyLife"} vImg={"https://i.ytimg.com/vi/Epa9CFnSqso/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBHLFp83_QVHmMJFaVf5DcLCqXcxA"} chImg={"https://yt3.ggpht.com/9UmxWVBc8ENWNEI0SvKotYZ7JdCEWNmA9gZtv64uKQQMW1rxkhiSdqGK53OdNlhKRox6oc61cQ=s68-c-k-c0x00ffffff-no-rj"} vidTitle={"تشيرنوبل الأمريكية | الدحيح"} chName={"New Media Academy Life "} churl={"https://www.youtube.com/@NewMedia_Life"} views={"1.2M views . 2 days ago"} />            
