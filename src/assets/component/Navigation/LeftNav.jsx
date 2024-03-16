@@ -37,24 +37,6 @@ export default function LeftNav({isNavOpen}) {
             <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
             <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
             <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            {/* <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} /> */}
-            {/* <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} /> */}
-            {/* <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} />
-            <NavItem iconName={"Watch later"} icon={<i class="material-icons">schedule</i>} /> */}
 
 
             </div >
@@ -69,7 +51,7 @@ export default function LeftNav({isNavOpen}) {
 
             {
                 Subscriptions.map(subscription => (
-                    <NavItem iconName={subscription.name} icon={<img src={subscription.imageURL} url={subscription.channelURL} />} />
+                    <NavItem iconName={subscription.name} icon={<img src={subscription.imageURL}/>} url={subscription.channelURL} />
                 ))
 
             }
