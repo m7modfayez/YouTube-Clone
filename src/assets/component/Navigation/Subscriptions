@@ -1,0 +1,50 @@
+const Subscriptions = [
+  {
+    name: "AJ+ كبريت",
+    channelURL: "https://www.youtube.com/@AJpluskibreet",
+    imageURL: "https://yt3.ggpht.com/ytc/AIdro_lIhYshw-1R9ovEsvsnzdlUQA1EkBYNS2GgRUMImQ=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "قناة الشيخ سمير مصطفى الرسمية",
+    channelURL: "https://www.youtube.com/@samirmoustafa",
+    imageURL: "https://yt3.ggpht.com/mfQyx_OyCIn8MxRrt2tcX25QM0v4h9VxGUqZsUb9J8RSIcQLXIxmcqzUOPLWPK2Ytb6qlKHlJw=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "علاء حامد - Alaa Hamed",
+    channelURL: "https://www.youtube.com/@-alaahamed5232",
+    imageURL: "https://yt3.ggpht.com/ytc/AIdro_mzRkCBzI8rYCeDAexVtJIwny1eoin_bVT3ILQ-Yg=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "Shiekh Ahmed Al Saeed Mndur",
+    channelURL: "https://www.youtube.com/@asmndur",
+    imageURL: "https://yt3.ggpht.com/CTLk0pTDL-PSbgR8HdJ_j64yDQxp3viQoZKOxnfuuzukMiIMO9nyn1JrY9OA3UOXs7twSIPUoA=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "New Media Academy Life",
+    channelURL: "https://www.youtube.com/@NewMedia_Life ",
+    imageURL: "https://yt3.ggpht.com/9UmxWVBc8ENWNEI0SvKotYZ7JdCEWNmA9gZtv64uKQQMW1rxkhiSdqGK53OdNlhKRox6oc61cQ=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "علاء حامد - Alaa Hamed",
+    channelURL: "https://www.youtube.com/@-alaahamed5232",
+    imageURL: "https://yt3.ggpht.com/ytc/AIdro_mzRkCBzI8rYCeDAexVtJIwny1eoin_bVT3ILQ-Yg=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "قناة الشيخ سمير مصطفى الرسمية",
+    channelURL: "https://www.youtube.com/@samirmoustafa",
+    imageURL: "https://yt3.ggpht.com/mfQyx_OyCIn8MxRrt2tcX25QM0v4h9VxGUqZsUb9J8RSIcQLXIxmcqzUOPLWPK2Ytb6qlKHlJw=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "AJ+ كبريت",
+    channelURL: "https://www.youtube.com/@AJpluskibreet",
+    imageURL: "https://yt3.ggpht.com/ytc/AIdro_lIhYshw-1R9ovEsvsnzdlUQA1EkBYNS2GgRUMImQ=s68-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "Shiekh Ahmed Al Saeed Mndur",
+    channelURL: "https://www.youtube.com/@asmndur",
+    imageURL: "https://yt3.ggpht.com/CTLk0pTDL-PSbgR8HdJ_j64yDQxp3viQoZKOxnfuuzukMiIMO9nyn1JrY9OA3UOXs7twSIPUoA=s68-c-k-c0x00ffffff-no-rj",
+  },
+
+];
+
+export default Subscriptions;

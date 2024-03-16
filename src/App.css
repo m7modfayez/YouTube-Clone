@@ -169,11 +169,14 @@
   width: 12%;
   background-color: rgb(255, 255, 255);
   overflow: auto;
+  /* overflow-x: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
 }
 .left-navigation:hover {
   scrollbar-width: thin;
-  overflow-y: visible;
-  max-height: 100vh;
+  /* overflow-y: visible; */
+  max-height: 97vh;
 }
 
 .left-navigation hr {
@@ -184,6 +187,9 @@
 
 
 .nav-item {
+  /* width: 80%; */
+  /* max-width: 90%; */
+  /* width: 200px; */
   display: flex;
   align-items: center;
   padding: 9px;
@@ -191,6 +197,10 @@
   background-color: rgb(255, 255, 255);
   border-radius: 13px;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
   
 }
 .nav-item:hover {
@@ -199,6 +209,11 @@
 
 .nav-item i {
   color: black;
+}
+
+.nav-item img {
+  width: 26px;
+  border-radius: 100%;
 }
 
 .nav-item a{
@@ -212,7 +227,7 @@
 .nav-item span {
   margin-left: 20px;
   font-family: Sans-serif;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .videos {
