@@ -105,10 +105,6 @@
   font-size: 17px;
 
 }
-/* .mid input:focus {
-  border-color: rgb(37, 172, 172);
-  border: rgb(21, 134, 199) solid 0.5px;
-} */
 
 .mid button {
   border-radius: 0 50px  50px 0;
@@ -242,7 +238,6 @@
   margin: 8px;
   width: 19%;
   margin-top: 18px;
-  /* background-color: aliceblue; */
 }
 
 .video a {
@@ -278,6 +273,12 @@
 }
 .video .info a:hover {
   color: black;
+}
+
+.video p {
+  height: auto;
+  max-height: 41px;
+  overflow: hidden;
 }
 
 .ch-name {
