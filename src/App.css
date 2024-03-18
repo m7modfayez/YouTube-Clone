@@ -233,10 +233,7 @@
 .videos {
   display:flex;
   flex-wrap: wrap;
-  /* margin-left: 13%; */
-  /* margin-left: auto; */
   margin-top: 80px;
-  /* width:86%; */
   width: auto;
   max-width: 96%;
 }
@@ -246,8 +243,6 @@
   width: 19%;
   margin-top: 18px;
   /* background-color: aliceblue; */
-  /* margin: 14px;*/
-  /* width: 14.5%;  */
 }
 
 .video a {
