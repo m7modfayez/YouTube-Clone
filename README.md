@@ -12,4 +12,3 @@ This project is a clone of the YouTube website, built using React. ![YouTube Log
 
 ## Technologies Used
 - React
-- [YouTube Data API](https://developers.google.com/youtube/v3)
