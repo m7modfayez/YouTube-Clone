@@ -17,7 +17,7 @@ export default function LeftNav({isNavOpen}) {
     }
 
     return(
-        <div style={{ display: isNavOpen? "" : "none" }} className="left-navigation">
+        <div style={{ display: isNavOpen? "" : "none", maxHeight: isNavOpen? "" : "0" }} className="left-navigation">
             {/* <nav> */}
             <div>
             <NavItem iconName={"Home"} icon={<i class="material-icons">home</i>}/>

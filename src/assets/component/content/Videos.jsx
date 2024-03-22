@@ -42,5 +42,10 @@ export default function Videos({isNavOpen}) {
 
 
         </div>
+
+        
+        // <div className="videos">
+        //     <iframe width="560" style={{margin: "20%"}} height="315" src="https://www.youtube.com/embed/fXcY14cm4_I?si=IZoIgD0ru-ILNv93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        // </div>
     );
 }
