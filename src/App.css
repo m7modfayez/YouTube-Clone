@@ -262,6 +262,7 @@
 @media screen and (max-width: 768px) {
   .video {
     flex-basis: calc(70% - 20px); /* Adjust as needed */
+    width: 90%;
     height: fit-content;
     margin: 12px auto;
   }

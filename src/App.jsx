@@ -1,4 +1,4 @@
-import { useState } from 'react'  
+import { useState, useEffect } from 'react'  
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './assets/component/Navigation/Header'
@@ -9,11 +9,21 @@ import Videos from './assets/component/content/Videos'
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(true);
 
-  // Function to toggle navigation style
   const navStyle = () => {
     setIsNavOpen(!isNavOpen);
     console.log("hey");
   };
+
+  useEffect(() => {
+    // Function to toggle navbar based on screen width
+    function toggleNavbar() {
+      const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      setIsNavOpen(screenWidth >= 768); 
+    }
+
+    toggleNavbar();
+  }, []);
+  
 
   return(
     <>
