@@ -96,19 +96,22 @@
   border-radius: 50px 0px 0px 50px;
   height: 67%;
   padding-left: 15px;
-  border-color: rgb(205, 209, 209);
   border:rgb(205, 209, 209) solid 1px;
   font-size: 17px;
+}
 
+.mid input:focus{
+  border: rgb(59, 122, 180) 1.5px solid;
+  outline: none;
 }
 
 .mid button {
   border-radius: 0 50px  50px 0;
   width: 65px;
   height: 77%;
-  margin-left: -5px;
   cursor: pointer;
   border:rgb(205, 209, 209) solid 1px;
+  border-left:none ;
 }
 
 .mid button:hover {
@@ -179,7 +182,7 @@
 
 @media screen and (max-width: 768px) {
   .left-navigation {
-    width: 70%; /* Occupy full width on smaller screens */
+    width: 60%; /* Occupy full width on smaller screens */
     /* max-height: 0;  */
     overflow: auto; /* Hide overflow */
     transition: max-height 0.3s ease; /* Add transition for smooth animation */
@@ -204,9 +207,9 @@
   /* max-width: 90%; */
   /* width: 200px; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 9px;
-  margin:3px 10px;
+  margin:3px 8px;
   background-color: rgb(255, 255, 255);
   border-radius: 13px;
   cursor: pointer;
@@ -261,8 +264,8 @@
 
 @media screen and (max-width: 768px) {
   .video {
-    flex-basis: calc(70% - 20px); /* Adjust as needed */
-    width: 90%;
+    flex-basis: calc(98% - 20px); 
+    /* width: 95%; */
     height: fit-content;
     margin: 12px auto;
   }
